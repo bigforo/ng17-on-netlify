@@ -28,17 +28,17 @@ export class AppComponent {
             if (event instanceof NavigationEnd)
             {
               var map = this.list.find(a=>a.short == event.url)
-              if (map?.url)
-                this.goToPage(map.url);
+              // if (map?.url)
+              //   this.goToPage(map.url);
             }
           });
   }
 
-  goToLink(url: string) {
-    window.open(url, "_target");
-  }
-  goToPage(url: string) {
-    window.location.href = url;
-  }
+  // goToLink(url: string) {
+  //   window.open(url, "_target");
+  // }
+  // goToPage(url: string) {
+  //   window.location.href = url;
+  // }
 
 }
